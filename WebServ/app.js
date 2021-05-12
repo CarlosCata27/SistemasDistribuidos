@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-
+app.use(express.json());
 app.get("/", async function (req, res) {
     let r = {'dato': 1,'valor': 'Nio'};
     res.json(r);
@@ -36,8 +36,13 @@ app.get("/ruta6/crear", async function (req, res) {
     res.json(r);
 });
 
-app.get("/ruta7/echo", async function (req, res) {
-    let r = { texto: req.query.texto, nombre: req.query.nombre, proyecto:req.query.proyecto};
+app.post("/ruta7/echo", async function (req, res) {
+    let r = req.body;
+    res.json(r);
+});
+
+app.post("/ruta8/add",async function(req , res){
+    let r = {texto: req.body.texto, nombre: req.body.nombre};
     res.json(r);
 });
 
