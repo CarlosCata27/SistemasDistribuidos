@@ -1,6 +1,6 @@
 # AMP Story tutorial "Joy of Pets"
 
-This folder contains the files for the "Create a visual AMP Story" tutorial.
+This folder contains the files for "Create a visual AMP Story" about me.
 
 ## Files included
 
