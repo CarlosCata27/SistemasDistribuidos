@@ -5,11 +5,9 @@ This folder contains the files for "Create a visual AMP Story" about me.
 ## Files included
 
 ```text
-amp-pets-story
+amp-personal-history
   ├── assets/
-  │   └──  images, video, audio for story
-  ├── bookend.json   
-  ├── pets.html            --- Incomplete version
-  ├── pets-completed.html  --- Completed version
+  │   └──  images and video
+  ├── pandemia.html        --- Completed version
   └── README.md
 ```
