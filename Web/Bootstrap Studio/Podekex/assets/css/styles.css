@@ -1,0 +1,38 @@
+img {
+  text-align: justify;
+  width: 1100px;
+  height: 440px;
+  margin: 0px;
+  max-height: 350px;
+}
+
+.max-img {
+  max-width: 160px;
+  display: block;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+  color: #fff;
+  display: block;
+  border-radius: 8px;
+}
+
+a:hover {
+  background-color: #3b3519;
+}
+
+.pagination {
+  justify-content: center;
+}
+
+nav {
+  margin: 15px auto;
+}
+
+li {
+  list-style-type: none;
+}
+

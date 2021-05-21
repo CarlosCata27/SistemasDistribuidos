@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Bootstrap 4 Example</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+ <style>
+   p{
+     color: navy;
+   }
+
+   p#especial{
+     color: red;
+   }
+
+   p.claseespecial.miclase{
+     color: blue;
+   }
+
+   p#especial.claseespecial{
+     color: orange;
+   }
+
+ </style>
+</head>
+<body>
+
+<div class="container-fluid">
+ <h3>TopBar-TopBar-TopBar</h3>
+</div>
+
+<div class="container">
+ <h1 class="display-1 text-primary">My First Bootstrap Page</h1>
+ <p>This is some text.</p>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="card" style="width:20rem;margin:20px 0 24px 0">
+      <img class="card-img-top" src="img_avatar3.png" alt="image" style="width:100%">
+      <div class="card-body">
+        <h4 class="card-title">John Doe</h4>
+        <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+        <a class="btn btn-primary">See Profile</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <h2>Bordered Table</h2>
+    <h3 class="text-dark">The .table-bordered class adds borders on all sides of the table and the cells:</h3>
+    <table class="table table-bordered table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-danger">
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Mary</td>
+          <td>Moe</td>
+          <td>mary@example.com</td>
+        </tr>
+        <tr>
+          <td>July</td>
+          <td>Dooley</td>
+          <td>july@example.com</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container">
+  <h2>Rounded Corners</h2>
+  <p>The .rounded class adds rounded corners to an image:</p>
+  <img src="cinqueterre.jpg" class="rounded-circle" alt="Cinque Terre" width="304" height="236">
+</div>
+
+
+<div class="container">
+  <div class="row">
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="la.jpg" alt="Los Angeles">
+          <div class="carousel-caption">
+            <h3>Los Angeles</h3>
+            <p class="text-white">We had such a great time in LA!</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="chicago.jpg" alt="Chicago">
+        </div>
+        <div class="carousel-item">
+          <img src="ny.jpg" alt="New York">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3"
+      style="background-image:url('450_1000.jpg');">
+      <h3 class="display-4">Column 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p id="especial">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+      <h3>Column 2</h3>
+      <p class="bg-primary text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p class="claseespecial miclase">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+      <h3>Column 3</h3>
+      <p id="especial" class="claseespecial">Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+    <div class="col-6 col-xs-6 col-sm-6 col-md-4 col-lg-3">
+      <h3>Column 4</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+    </div>
+  </div>
+</div>
+
+
+</body>
+</html>

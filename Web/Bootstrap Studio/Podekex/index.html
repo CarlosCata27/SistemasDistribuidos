@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" style="background: rgb(210,194,112);">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Advent+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bitter:400,700">
+    <link rel="stylesheet" href="assets/css/Animated-Header--Easy-Editable--1.css">
+    <link rel="stylesheet" href="assets/css/Animated-Header--Easy-Editable-.css">
+    <link rel="stylesheet" href="assets/css/Header-Dark.css">
+    <link rel="stylesheet" href="assets/css/simple-footer.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body style="background: rgb(210,194,112);"><div class="modal fade" role="dialog" tabindex="-1" id="infoPokemon">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="namePokemon"></h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"><img id="imgPokemon" class="max-img">
+                    <h6>Id</h6>
+                    <ul id="id">
+                        <li id="idItem">Item 1</li>
+                    </ul>
+                    <h6>Altura</h6>
+                    <ul id="height">
+                        <li id="heightItem">Item 2</li>
+                    </ul>
+                    <h6>Peso</h6>
+                    <ul id="weight">
+                        <li id="weightItem">Item 3</li>
+                    </ul>
+                    <h6>Tipos</h6>
+                    <ul id="types">
+                        <li id="typeItem-1">Item 3</li>
+                        <li id="typeItem-2">Item 3</li>
+                    </ul>
+                    <h6>Habilidades</h6>
+                    <ul id="ability">
+                        <li id="abilityItem-1">Item 3</li>
+                        <li id="abilityItem-2">Item 3</li>
+                        <li id="abilityItem-3">Item 3</li>
+                        <li id="abilityItem-4">Item 3</li>
+                    </ul>
+                    <h6>Movimientos</h6>
+                    <ul id="moves">
+                        <li id="movesItem-1">Item 3</li>
+                        <li id="movesItem-2">Item 3</li>
+                        <li id="movesItem-3">Item 3</li>
+                        <li id="movesItem-4">Item 3</li>
+                    </ul>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div>
+    <header><img class="img-fluid rounded mx-auto d-block" src="assets/img/1200px-International_Pokémon_logo.svg.png">
+        <div class="container mt-5">
+            <div class="row mt-2">
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+                <div class="col-md-4 col-xs-12 col-sm-4 col-md-2 col-lg-2 col-xl-2"><a data-toggle="modal" data-target="#infoPokemon"><img class="max-img" onclick="createWindownContent(this)"></a></div>
+            </div>
+        </div>
+        <nav class="navbar navbar-light navbar-expand-md">
+            <div class="container-fluid">
+                <ul class="navbar-nav pagination list-inline mx-auto justify-content-center">
+                    <li class="nav-item page-item" id="previousPage"><a class="nav-link active page-link" id="aPreviousPage" href="#" aria-label="Previous" onclick="newPage(this)"><span aria-hidden="true">&lt;&lt;</span></a></li>
+                    <li class="nav-item page-item" id="currentPage"><a class="nav-link page-link" id="aCurrentPage" href="#">1</a></li>
+                    <li class="nav-item page-item" id="nextPage"><a class="nav-link page-link" id="aNextPage" href="#" aria-label="Next" onclick="newPage(this)"><span aria-hidden="true">&gt;&gt;</span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="footer-2" style="background: rgb(210,194,112);">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 col-sm-6 col-md-6">
+                        <p class="text-center text-sm-center text-md-center text-lg-center text-xl-center text-left" style="margin-top: 5%;margin-bottom: 3%;color: rgb(0,0,0);">© 2021 POKEDEX</p>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-6">
+                        <p class="text-center text-sm-center text-md-center text-lg-center text-xl-center" style="margin-top: 5%;margin-bottom: 8%%;font-size: 1em;text-align: center;color: rgb(0,0,0);">CATARINO CORRALCO CARLOS ALBERTO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/llenadoDatos.js"></script>
+</body>
+
+</html>

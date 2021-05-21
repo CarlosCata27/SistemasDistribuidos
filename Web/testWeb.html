@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pagina Ejemplo</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // $("#idp_1").hide();
+            $("#btn01").click(function(){
+                $("#iddiv1").hide();
+            });
+            $("#btn02").click(function(){
+                $("#iddiv1").show();
+            });
+            $("#id4").click(function(){
+                $("#idp_1").hide();
+                $(".clase1").hide();
+            });
+        });
+    </script>
+</head>
+<style>
+    h2 {
+        color: yellow;
+        text-align: center;
+    }
+
+    h2#id4.clase2 {
+        color: darkmagenta;
+        text-align: right;
+    }
+
+    h2.clase2 {
+        color: purple;
+        text-align: right;
+    }
+
+    p {
+        font-family: verdana;
+        font-size: 20px;
+    }
+
+    p#id1 {
+        font-family: verdana;
+        font-size: 40px;
+    }
+    .clase1 {
+        text-align: center;
+        color: orange;
+    }
+    #idp_1 {
+        text-align: center;
+        color: red;
+    }
+</style>
+<script>
+    function cambiah2(){
+        let varlocal = document.getElementById("idh2_1");
+        varlocal.innerHTML="Texto modificado";
+        varlocal.style.color="green";
+    }
+
+    function desaparece(){
+        let varlocal = document.getElementById("idp_2");
+        console.log("dato: "+varlocal.innerText);
+        varlocal.style.display="none";
+    }
+
+    function aparece(){
+        let varlocal = document.getElementById("idp_2");
+        console.log("dato: "+varlocal.innerText);
+        varlocal.style.display="block";
+    }
+</script>
+<body>
+<div id="iddiv1">
+<h2 id="idh2_1">This is a heading</h2>
+
+<h2 class="clase2">This is a heading con clase2</h2>
+
+<h2 class="clase2">This is a heading con clase2</h2>
+
+<h2 id="id4" class="clase2">This is a heading con clase2</h2>
+
+<p id="id1">This is a paragraph de tamaño 40</p>
+
+<p id="idp_1">This is a paragraph.</p>
+<p id="idp_2" class="clase1" onclick="desaparece();">This is another paragraph.</p>
+
+<h3 onclick="aparece();">Que aparezca</h3>
+
+<h4 onclick="">
+    Test
+</h4>
+
+<h3 onclick="cambiah2();">Click me</h3>
+<button>Click Me Two</button>
+</div>
+<button id="btn01">Oculta Todo</button>
+<button id="btn02">Muestra Todo</button>
+
+<iframe src="https://discord.com/widget?id=758478756141989934&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+</body>
+</html>
