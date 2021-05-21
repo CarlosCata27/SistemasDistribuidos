@@ -1,4 +1,4 @@
-# AMP Story tutorial "Joy of Pets"
+# AMP Story "My last year"
 
 This folder contains the files for "Create a visual AMP Story" about me.
 
